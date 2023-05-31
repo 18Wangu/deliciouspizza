@@ -1,0 +1,652 @@
+/******************les fonts******************/
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face{
+    font-family: "Josefin";
+    src: url("fonts/static/JosefinSans-Light.ttf");
+}
+@font-face{
+    font-family: "Nothing";
+    src: url("fonts/NothingYouCouldDo-Regular.ttf");
+}
+
+/******************Toute la page******************/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/******************navbar******************/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 200px 25px 200px;
+    background-color: rgb(13, 17, 18);
+}
+.logo{
+    margin-top: -15px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav a{
+    color: rgb(220, 219, 216);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+nav a:hover{
+    color: rgb(237, 186, 92);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.navbar ul li a.active {
+    color: rgb(237, 186, 92);
+}
+
+/****************** welcome ******************/
+#welcome {
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/background-image.jpg);
+    background-size: cover;
+    animation: zoom-in 30s infinite;
+    z-index: -1;
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#welcome strong{
+    font-family: "Nothing";
+    color: rgb(237, 186, 92);
+    font-size: 50px;
+}
+#welcome h1{
+    color: rgb(220, 219, 216);
+    font-family: "Josefin";
+    font-size: 40px;
+    text-align: center;
+    margin: 35px;
+}
+.orderNow{
+    border: 1px solid rgb(237, 186, 92);
+    padding: 15px;
+    margin: 0px 15px;
+    font-family: "Poppins";
+    font-size: 16px;
+    background-color: rgb(237, 186, 92);
+    color: black;
+}
+.orderNow:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(220, 219, 216);
+    border: 1px solid rgb(220, 219, 216);
+}
+.viewMenu{
+    border: 1px solid rgb(220, 219, 216);
+    background-color: transparent;
+    padding: 15px;
+    margin: 0px 15px;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: rgb(220, 219, 216);
+}
+.viewMenu:hover{
+    background-color: rgb(237, 186, 92);
+    border: 1px solid rgb(237, 186, 92);
+    color: black;
+    cursor: pointer;
+}
+
+/****************** bandeau contact ******************/
+#bandeauContact{
+    display: flex;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    padding: 25px 50px 25px 200px;
+    background-color: rgb(13, 17, 18);
+    width: 80vw;
+}
+.contactDetail{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 65px;
+}
+.iconeEtText{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#bandeauContact h1{
+    font-family: "Josefin";
+    font-size: 16px;
+    color: rgb(220, 219, 216);
+    margin-left: 10px;
+}
+#bandeauContact h2{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin-left: 35px;
+}
+.reseauSociaux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 186, 92);
+    width: 20vw;
+}
+.reseauSociaux img{
+    margin: 0px 5px;
+}
+
+/******************  history ******************/
+#history{
+    display: flex;
+}
+.historyBackground{
+    background-image: url(images/background-tableau-prof.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#history h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    margin: 20px;
+}
+#history p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 0px 100px;
+    text-align: justify;
+}
+#history strong{
+    color: rgb(237, 186, 92);   
+} 
+
+/****************** our services ******************/
+#ourServices{
+    background-color: rgb(237, 186, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 140px;
+}
+#ourServices h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(13, 17, 18);
+}
+#ourServices p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5c3d03;
+    margin: 35px 0px;
+}
+#ourServices h3{
+    font-family: "Josefin";
+    font-size: 18px;
+    color: rgb(13, 17, 18);
+}
+#ourServices img {
+    margin: 30px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+#ourServices img:hover {
+    transform: rotate(360deg);
+}
+.services{
+    display: flex;
+}
+.oneServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 35px;
+} 
+
+/****************** meals + menu ******************/
+.background_fixe{
+    background-image: url(images/background-tableau-prof.jpg);
+    background-attachment: fixed;
+}
+/****************** meals ******************/
+#meals{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#meals h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    padding: 25px;
+}
+#meals h3{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    text-align: center;
+}
+.orderPizza{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px;
+}
+.pizza{
+    display: flex;
+}
+.description{
+    padding: 25px;
+    width: 16.60vw;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+/****** les images ******/
+.italianPizza{
+    width: 16.60vw;
+    background-image: url(images/caucasianPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.greekPizza{
+    width: 16.60vw;
+    background-image: url(images/greekPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.caucasianPizza{
+    width: 16.60vw;
+    background-image: url(images/caucasianPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.americanPizza{
+    width: 16.60vw;
+    background-image: url(images/americanPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.tomatoePie{
+    width: 16.60vw;
+    background-image: url(images/tomatoePie.webp);
+    background-size: cover;
+    background-position: center;
+}
+.margherita{
+    width: 16.60vw;
+    background-image: url(images/margherita.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+/****** les descriptions ******/
+#meals h2{
+    font-family: "Josefin";
+    font-size: 20px;
+    color: rgb(220, 219, 216);
+}
+#meals p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 15px 0px;
+}
+#meals strong{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: rgb(237, 186, 92);
+}
+#meals button{
+    font-family: "Poppins";
+    font-size: 13px;
+    color: rgb(220, 219, 216);
+    border: 1px solid rgb(220, 219, 216);
+    padding: 6px 12px;
+    margin-left: 8px;
+    background-color: transparent;
+}
+#meals button:hover{
+    background-color: rgb(237, 186, 92);
+    border: 1px solid rgb(237, 186, 92);
+    cursor: pointer;
+}
+
+/****************** menu pricing ******************/
+#menuPricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menuPricing h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    padding: 25px;
+}
+#menuPricing h3{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    text-align: center;
+}
+#menuPricing h2{
+    font-family: "Josefin";
+    font-size: 20px;
+    color: rgb(220, 219, 216);
+}
+#menuPricing p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 15px 0px;
+}
+
+/****************** menu ******************/
+.menu{
+    display: flex;
+    margin: 70px 0px;
+}
+.dividerCube{
+    display: flex;
+    align-items: center;
+}
+.bigCube{
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 15px;
+}
+.smallCube{
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.line{
+    content: "";
+    display: inline-block;
+    background-color: #fac564;
+    width: 70px;
+    height: 1px;
+    margin: 0px 10px;
+}
+.prix{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+.menu img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.pizzaEtPrix{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu strong{
+    color: rgb(237, 186, 92);
+}
+
+/****************** numbers dynamics ******************/
+#numbersDynamics{
+    padding: 50px 200px;
+    background-color: rgb(237, 186, 92);
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#numbersDynamics img{
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid rgb(220, 219, 216);
+    transition: border-color 0.3s, transform 0.3s;
+}
+#numbersDynamics span{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    font-weight: bold;
+}
+#numbersDynamics p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5c3d03;
+    margin-top: 10px;
+}
+#numbersDynamics img:hover {
+    transform: rotate(360deg);
+    border-color: rgb(237, 186, 92);
+}
+
+/****************** menu clic ******************/
+#menu_clic{
+    background-image: url("images/background-tableau-prof.jpg");
+    background-attachment: fixed;
+    padding: 80px;
+}
+.chooseMenu{
+    padding: 8px 16px;
+    margin: 0px 30px 50px 0px;
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(237, 186, 92);
+    border: 1px solid rgb(237, 186, 92);
+    background-color: transparent;
+}
+.chooseMenu:hover{
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+    cursor: pointer;
+}
+.chooseMenu.active{
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+}
+#pizzas, #drinks, #burger, #pasta {
+    display: flex;
+    justify-content: space-around;
+}
+#pizzas div, #drinks div, #burger div, #pasta div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pizzas img, #drinks img, #burger img, #pasta img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px 0px;
+}
+#pizzas h2, #drinks h2, #burger h2, #pasta h2{
+    font-family: "Josefin";
+    font-size: 20px;
+    color: rgb(220, 219, 216);
+}
+#pizzas p, #drinks p, #burger p, #pasta p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 15px 0px;
+}
+#pizzas strong, #drinks strong, #burger strong, #pasta strong{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: rgb(237, 186, 92);
+}
+#pizzas button, #drinks button, #burger button, #pasta button{
+    font-family: "Poppins";
+    font-size: 13px;
+    color: rgb(220, 219, 216);
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid rgb(220, 219, 216);
+}
+#pizzas button:hover, #drinks button:hover, #burger button:hover, #pasta button:hover{
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+    border: 1px solid rgb(237, 186, 92);
+    cursor: pointer;
+}
+
+/****************** contact ******************/
+#contact{
+    display: flex;
+    width: 100vw;
+}
+#contact article{
+    width: 50vw;
+    height: 455px;
+}
+iframe{
+    width: 50vw;
+    height: 450px;
+}
+.formulaire{
+    background-color: rgb(13, 17, 18);
+    padding: 100px;
+}
+h1{
+    font-family: "Josefin";
+    font-size: 28px;
+    color: rgb(220, 219, 216);
+}
+#name, #email, #message{
+    width: 350px;
+    border: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    height: 58px !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+#name::placeholder, #email::placeholder, #message::placeholder{
+    font-family: "Josefin";
+    font-size: 18px;
+    color: rgb(220, 219, 216);
+}
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="email"]:focus {
+    outline: none;
+}
+input[type="message"]:focus {
+    outline: none;
+}
+#submit{
+    margin: 25px 0px;
+    padding: 16px 24px;
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+    border: 1px solid rgb(237, 186, 92);
+}
+#submit:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(237, 186, 92);
+}
+
+/****************** footer ******************/
+footer{
+    background-color: rgb(237, 186, 92);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.aboutUs{
+    display: flex;
+}
+.memeLigne{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.socialMedia{
+    display: flex;
+}
+footer h1{
+    font-family: "Josefin";
+    font-size: 28px;
+    color: rgb(13, 17, 18);
+}
+footer p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5c3d03;
+    margin: 0px 45px 0px 15px;
+}
+
+/******************************* animation au scroll *******************************/
+.invisible {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}  
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+

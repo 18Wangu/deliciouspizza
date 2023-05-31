@@ -1,0 +1,364 @@
+/******************les fonts******************/
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face{
+    font-family: "Josefin";
+    src: url("fonts/static/JosefinSans-Light.ttf");
+}
+@font-face{
+    font-family: "Nothing";
+    src: url("fonts/NothingYouCouldDo-Regular.ttf");
+}
+
+/******************Toute la page******************/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background-image: url(images/background-tableau-prof.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/******************navbar******************/
+nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 200px 25px 200px;
+    background-color: rgb(13, 17, 18);
+}
+.logo{
+    margin-top: -15px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav a{
+    color: rgb(220, 219, 216);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+nav a:hover{
+    color: rgb(237, 186, 92);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.navbar ul li a.active {
+    color: rgb(237, 186, 92);
+}
+
+/****************** meals ******************/
+#meals{
+    padding: 150px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#meals h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    padding: 25px;
+}
+#meals h3{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    text-align: center;
+}
+.orderPizza{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px;
+}
+.pizza{
+    display: flex;
+}
+.description{
+    padding: 25px;
+    width: 16.60vw;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+/****** les images ******/
+.italianPizza{
+    width: 16.60vw;
+    background-image: url(images/caucasianPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.greekPizza{
+    width: 16.60vw;
+    background-image: url(images/greekPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.caucasianPizza{
+    width: 16.60vw;
+    background-image: url(images/caucasianPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.americanPizza{
+    width: 16.60vw;
+    background-image: url(images/americanPizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+.tomatoePie{
+    width: 16.60vw;
+    background-image: url(images/tomatoePie.webp);
+    background-size: cover;
+    background-position: center;
+}
+.margherita{
+    width: 16.60vw;
+    background-image: url(images/margherita.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+/****** les descriptions ******/
+#meals h2{
+    font-family: "Josefin";
+    font-size: 20px;
+    color: rgb(220, 219, 216);
+}
+#meals p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 15px 0px;
+}
+#meals strong{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: rgb(237, 186, 92);
+}
+#meals button{
+    font-family: "Poppins";
+    font-size: 13px;
+    color: rgb(220, 219, 216);
+    border: 1px solid rgb(220, 219, 216);
+    padding: 6px 12px;
+    margin-left: 8px;
+    background-color: transparent;
+}
+#meals button:hover{
+    background-color: rgb(237, 186, 92);
+    border: 1px solid rgb(237, 186, 92);
+    cursor: pointer;
+}
+
+/****************** menu pricing ******************/
+#menuPricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menuPricing h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    padding: 25px;
+}
+#menuPricing h3{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    text-align: center;
+}
+#menuPricing h2{
+    font-family: "Josefin";
+    font-size: 20px;
+    color: rgb(220, 219, 216);
+}
+#menuPricing p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 15px 0px;
+}
+
+/****************** menu ******************/
+.menu{
+    display: flex;
+    margin: 70px 0px;
+}
+.dividerCube{
+    display: flex;
+    align-items: center;
+}
+.bigCube{
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 15px;
+}
+.smallCube{
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.line{
+    content: "";
+    display: inline-block;
+    background-color: #fac564;
+    width: 70px;
+    height: 1px;
+    margin: 0px 10px;
+}
+.prix{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+.menu img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.pizzaEtPrix{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu strong{
+    color: rgb(237, 186, 92);
+}
+
+/****************** menu clic ******************/
+#menu_clic{
+    padding: 80px;
+}
+.chooseMenu{
+    padding: 8px 16px;
+    margin: 0px 30px 50px 0px;
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(237, 186, 92);
+    border: 1px solid rgb(237, 186, 92);
+    background-color: transparent;
+}
+.chooseMenu:hover{
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+    cursor: pointer;
+}
+.chooseMenu.active{
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+}
+#pizzas, #drinks, #burger, #pasta {
+    display: flex;
+    justify-content: space-around;
+}
+#pizzas div, #drinks div, #burger div, #pasta div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pizzas img, #drinks img, #burger img, #pasta img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px 0px;
+}
+#pizzas h2, #drinks h2, #burger h2, #pasta h2{
+    font-family: "Josefin";
+    font-size: 20px;
+    color: rgb(220, 219, 216);
+}
+#pizzas p, #drinks p, #burger p, #pasta p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 15px 0px;
+}
+#pizzas strong, #drinks strong, #burger strong, #pasta strong{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: rgb(237, 186, 92);
+}
+#pizzas button, #drinks button, #burger button, #pasta button{
+    font-family: "Poppins";
+    font-size: 13px;
+    color: rgb(220, 219, 216);
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid rgb(220, 219, 216);
+}
+#pizzas button:hover, #drinks button:hover, #burger button:hover, #pasta button:hover{
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+    border: 1px solid rgb(237, 186, 92);
+    cursor: pointer;
+}
+
+/****************** footer ******************/
+footer{
+    background-color: rgb(237, 186, 92);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.aboutUs{
+    display: flex;
+}
+.memeLigne{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.socialMedia{
+    display: flex;
+}
+footer h1{
+    font-family: "Josefin";
+    font-size: 28px;
+    color: rgb(13, 17, 18);
+}
+footer p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5c3d03;
+    margin: 0px 45px 0px 15px;
+}
+
+/******************************* animation au scroll *******************************/
+.invisible {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}  
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+

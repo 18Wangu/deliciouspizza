@@ -1,0 +1,282 @@
+/******************les fonts******************/
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face{
+    font-family: "Josefin";
+    src: url("fonts/static/JosefinSans-Light.ttf");
+}
+@font-face{
+    font-family: "Nothing";
+    src: url("fonts/NothingYouCouldDo-Regular.ttf");
+}
+
+/******************Toute la page******************/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/******************navbar******************/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 200px 25px 200px;
+    background-color: rgb(13, 17, 18);
+}
+.logo{
+    margin-top: -15px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav a{
+    color: rgb(220, 219, 216);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+nav a:hover{
+    color: rgb(237, 186, 92);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.navbar ul li a.active {
+    color: rgb(237, 186, 92);
+}
+
+/****************** bandeau contact ******************/
+#bandeauContact{
+    display: flex;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    padding: 25px 50px 25px 200px;
+    background-color: rgb(13, 17, 18);
+    width: 80vw;
+}
+.contactDetail{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 65px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.iconeEtText{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#bandeauContact h1{
+    font-family: "Josefin";
+    font-size: 16px;
+    color: rgb(220, 219, 216);
+    margin-left: 10px;
+}
+#bandeauContact h2{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin-left: 35px;
+}
+.reseauSociaux{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 186, 92);
+    width: 20vw;
+}
+.reseauSociaux img{
+    margin: 0px 5px;
+}
+.reseauSociaux a{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/******************  history ******************/
+#history{
+    display: flex;
+}
+.historyBackground{
+    background-image: url(images/background-tableau-prof.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#history h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#history p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    margin: 0px 100px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#history strong{
+    color: rgb(237, 186, 92);   
+} 
+
+/****************** ourchef ******************/
+#ourChef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/background-tableau-prof.jpg);
+    background-attachment: fixed;
+    padding: 70px 150px;
+}
+#ourChef h1{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    padding: 25px;
+}
+#ourChef h3{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.dividerCube{
+    display: flex;
+    align-items: center;
+}
+.bigCube{
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: 15px;
+}
+.smallCube{
+    width: 6px;
+    height: 6px;
+    content: '';
+    background: #fac564;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.line{
+    content: "";
+    display: inline-block;
+    background-color: #fac564;
+    width: 70px;
+    height: 1px;
+    margin: 0px 10px;
+}
+
+.theChefs{
+    display: flex;
+}
+.chef{
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #5c3d03;
+}
+.theChefs img{
+    width: 150px;
+    border-radius: 50%;
+}
+.chef strong{
+    font-family: "Josefin";
+    font-size: 15px;
+    color: rgb(237, 186, 92);
+    margin: 15px;
+}
+.theChefs h2{
+    font-family: "Poppins";
+    font-size: 12px;
+    color: rgb(220, 219, 216);
+    margin-bottom: 15px;
+}
+.theChefs p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: rgb(144, 136, 123);
+}
+.chef:hover{
+    border: 1px solid rgb(237, 186, 92);
+}
+
+/****************** numbers dynamics ******************/
+#numbersDynamics{
+    padding: 50px 200px;
+    background-color: rgb(237, 186, 92);
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#numbersDynamics img{
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid rgb(220, 219, 216);
+    transition: border-color 0.3s, transform 0.3s;
+}
+#numbersDynamics span{
+    font-family: "Josefin";
+    font-size: 30px;
+    color: rgb(220, 219, 216);
+    font-weight: bold;
+}
+#numbersDynamics p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5c3d03;
+    margin-top: 10px;
+}
+#numbersDynamics img:hover {
+    transform: rotate(360deg);
+    border-color: rgb(237, 186, 92);
+}
+
+/******************************* animation au scroll *******************************/
+.invisible {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}  
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

@@ -1,0 +1,226 @@
+/******************les fonts******************/
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins/Poppins-Light.ttf");
+}
+@font-face{
+    font-family: "Josefin";
+    src: url("fonts/static/JosefinSans-Light.ttf");
+}
+@font-face{
+    font-family: "Nothing";
+    src: url("fonts/NothingYouCouldDo-Regular.ttf");
+}
+
+/******************Toute la page******************/
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/******************navbar******************/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 200px 25px 200px;
+    background-color: rgb(13, 17, 18);
+}
+.logo{
+    margin-top: -15px;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav a{
+    color: rgb(220, 219, 216);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+nav a:hover{
+    color: rgb(237, 186, 92);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+.navbar ul li a.active {
+    color: rgb(237, 186, 92);
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    nav{
+        padding: 40px;
+    }
+    .navbar{
+        display: none;
+    }
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+
+}
+
+/****************** contact ******************/
+#contact{
+    display: flex;
+    width: 100vw;
+}
+#contact article{
+    width: 50vw;
+    height: 455px;
+}
+iframe{
+    width: 50vw;
+    height: 450px;
+}
+.formulaire{
+    background-image: url("images/background-tableau-prof.jpg");
+    background-attachment: fixed;
+    padding: 100px;
+}
+h1{
+    font-family: "Josefin";
+    font-size: 28px;
+    color: rgb(220, 219, 216);
+}
+#name, #email, #message{
+    width: 350px;
+    border: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    height: 58px !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+#name::placeholder, #email::placeholder, #message::placeholder{
+    font-family: "Josefin";
+    font-size: 18px;
+    color: rgb(220, 219, 216);
+}
+input[type="text"]:focus {
+    outline: none;
+}
+input[type="email"]:focus {
+    outline: none;
+}
+input[type="message"]:focus {
+    outline: none;
+}
+#submit{
+    margin: 25px 0px;
+    padding: 16px 24px;
+    background-color: rgb(237, 186, 92);
+    color: rgb(13, 17, 18);
+    border: 1px solid rgb(237, 186, 92);
+}
+#submit:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(237, 186, 92);
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact article{
+        width: 100vw;
+        height: 350px;
+    }
+    iframe{
+        width: 100vw;
+        height: 350px;
+    }
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+
+}
+
+/****************** footer ******************/
+footer{
+    background-color: rgb(237, 186, 92);
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+}
+.aboutUs{
+    display: flex;
+}
+.memeLigne{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.socialMedia{
+    display: flex;
+}
+footer h1{
+    font-family: "Josefin";
+    font-size: 28px;
+    color: rgb(13, 17, 18);
+}
+footer p{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #5c3d03;
+    margin: 0px 45px 0px 15px;
+}
+
+/******************************* animation au scroll *******************************/
+.invisible {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}  
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+
+}
