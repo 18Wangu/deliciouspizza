@@ -54,6 +54,27 @@ nav a:hover{
 .navbar ul li a.active {
     color: rgb(237, 186, 92);
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+    .navbar{
+        display: none;
+    }
+}
 
 /****************** our services ******************/
 #ourServices{
@@ -74,6 +95,7 @@ nav a:hover{
     font-size: 15px;
     color: #5c3d03;
     margin: 35px 0px;
+    text-align: center;
 }
 #ourServices h3{
     font-family: "Josefin";
@@ -97,7 +119,32 @@ nav a:hover{
     align-items: center;
     text-align: center;
     margin: 0px 35px;
-} 
+}
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #ourServices{
+        padding: 50px 50px;
+    }
+    .services{
+        flex-direction: column;
+    }
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+
+}
 
 /****************** hot meals ****************/
 #hotMeals{
@@ -198,13 +245,25 @@ nav a:hover{
     border: 1px solid rgb(237, 186, 92);
     cursor: pointer;
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    #pizzas {
+        flex-wrap: wrap;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #pizzas {
+        flex-direction: column;
+    }
+}
 
 /****************** footer ******************/
 footer{
     background-color: rgb(237, 186, 92);
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 35px;
 }
 .aboutUs{
     display: flex;
@@ -216,17 +275,36 @@ footer{
 }
 .socialMedia{
     display: flex;
+    justify-content: center;
 }
 footer h1{
     font-family: "Josefin";
     font-size: 28px;
     color: rgb(13, 17, 18);
+    margin-top: 25px;
 }
 footer p{
     font-family: "Poppins";
     font-size: 15px;
     color: #5c3d03;
     margin: 0px 45px 0px 15px;
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    footer{
+        text-align: center;
+    }
+    .aboutUs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /******************************* animation au scroll *******************************/
@@ -239,6 +317,5 @@ footer p{
     opacity: 1;
     transform: translateY(0);
 }
-
 
 

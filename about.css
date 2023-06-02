@@ -54,6 +54,27 @@ nav a:hover{
 .navbar ul li a.active {
     color: rgb(237, 186, 92);
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+    .navbar{
+        display: none;
+    }
+}
 
 /****************** bandeau contact ******************/
 #bandeauContact{
@@ -106,9 +127,40 @@ nav a:hover{
     transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    .contact{
+        padding: 15px;
+    }
+    .contactDetail{
+        margin: 20px 30px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    #bandeauContact{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 25px;
+        width: 100vw;
+    }
+    .contactDetail{
+        align-items: center;
+        margin: 15px;
+    }
+    .reseauSociaux{
+        width: 100vw;
+    }
+}
+
 /******************  history ******************/
 #history{
     display: flex;
+}
+#history img{
+    width: 50vw;
 }
 .historyBackground{
     background-image: url(images/background-tableau-prof.jpg);
@@ -140,6 +192,42 @@ nav a:hover{
 #history strong{
     color: rgb(237, 186, 92);   
 } 
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    #history h1{
+        text-align: center;
+        margin: 40px 40px 0px 40px;
+    }
+    #history p{
+        margin: 25px 50px 55px 50px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    #history{
+        flex-direction: column;
+    }
+    #history img{
+        width: 100vw;
+    }
+    #history h1{
+        text-align: center;
+        margin: 70px 40px 0px 40px;
+    }
+    #history p{
+        margin: 25px 80px 70px 80px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #history h1{
+        text-align: center;
+        margin: 40px 40px 0px 40px;
+    }
+    #history p{
+        margin: 25px 30px 40px 30px;
+    }
+}
 
 /****************** ourchef ******************/
 #ourChef{
@@ -233,6 +321,21 @@ nav a:hover{
 .chef:hover{
     border: 1px solid rgb(237, 186, 92);
 }
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    .theChefs{
+        flex-wrap: wrap;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #ourChef{
+        padding: 40px 50px;
+    }
+    .theChefs{
+        flex-direction: column;
+    }
+}
 
 /****************** numbers dynamics ******************/
 #numbersDynamics{
@@ -268,6 +371,13 @@ nav a:hover{
     transform: rotate(360deg);
     border-color: rgb(237, 186, 92);
 }
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #numbersDynamics{
+        padding: 50px 50px;
+        flex-direction: column;
+    }
+}
 
 /******************************* animation au scroll *******************************/
 .invisible {
@@ -279,4 +389,6 @@ nav a:hover{
     opacity: 1;
     transform: translateY(0);
 }
+
+
 

@@ -30,9 +30,6 @@ body{
 
 /******************navbar******************/
 nav{
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,10 +59,31 @@ nav a:hover{
 .navbar ul li a.active {
     color: rgb(237, 186, 92);
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+    .navbar{
+        display: none;
+    }
+}
 
 /****************** meals ******************/
 #meals{
-    padding: 150px 0px 50px 0px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,19 +92,20 @@ nav a:hover{
     font-family: "Josefin";
     font-size: 30px;
     color: rgb(220, 219, 216);
-    padding: 25px;
+    padding: 25px 0px;
 }
 #meals h3{
     font-family: "Poppins";
     font-size: 15px;
     color: rgb(144, 136, 123);
     text-align: center;
+    margin-bottom: 50px;
+    padding: 0px 15px;
 }
 .orderPizza{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    margin: 80px;
 }
 .pizza{
     display: flex;
@@ -166,6 +185,34 @@ nav a:hover{
     border: 1px solid rgb(237, 186, 92);
     cursor: pointer;
 }
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    .description{
+        width: 50vw;
+    }
+    .inverserPizzaDescription{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .italianPizza{
+        width: 50vw;
+    }
+    .greekPizza{
+        width: 50vw;
+    }
+    .caucasianPizza{
+        width: 50vw;
+    }
+    .americanPizza{
+        width: 50vw;
+    }
+    .tomatoePie{
+        width: 50vw;
+    }
+    .margherita{
+        width: 50vw;
+    }
+}
 
 /****************** menu pricing ******************/
 #menuPricing{
@@ -177,13 +224,14 @@ nav a:hover{
     font-family: "Josefin";
     font-size: 30px;
     color: rgb(220, 219, 216);
-    padding: 25px;
+    padding: 25px 0px;
 }
 #menuPricing h3{
     font-family: "Poppins";
     font-size: 15px;
     color: rgb(144, 136, 123);
     text-align: center;
+    padding: 0px 15px;
 }
 #menuPricing h2{
     font-family: "Josefin";
@@ -250,6 +298,34 @@ nav a:hover{
 }
 .menu strong{
     color: rgb(237, 186, 92);
+}
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    .menu{
+        flex-direction: column;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    .pizzaEtPrix{
+        width: 260px;
+    }
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+    .pizzaEtPrix{
+        width: 200px;
+    }
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+    .pizzaEtPrix{
+        width: 170px;
+    }
 }
 
 /****************** menu clic ******************/
@@ -319,13 +395,41 @@ nav a:hover{
     border: 1px solid rgb(237, 186, 92);
     cursor: pointer;
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    #pizzas, #drinks, #burger, #pasta {
+        flex-wrap: wrap;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #menu_clic{
+        padding: 10px;
+    }
+    .chooseMenu{
+        margin: 0px 10px 20px 0px;
+    }
+    #pizzas, #drinks, #burger, #pasta {
+        flex-direction: column;
+    }
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+    .chooseMenu{
+        margin: 0px 8px 20px 0px;
+    }
+}
 
 /****************** footer ******************/
 footer{
     background-color: rgb(237, 186, 92);
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 35px;
 }
 .aboutUs{
     display: flex;
@@ -337,17 +441,38 @@ footer{
 }
 .socialMedia{
     display: flex;
+    justify-content: center;
 }
 footer h1{
     font-family: "Josefin";
     font-size: 28px;
     color: rgb(13, 17, 18);
+    margin-top: 25px;
 }
 footer p{
     font-family: "Poppins";
     font-size: 15px;
     color: #5c3d03;
     margin: 0px 45px 0px 15px;
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    footer{
+        text-align: center;
+        padding-bottom: 55px;
+    }
+    .aboutUs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+    }
 }
 
 /******************************* animation au scroll *******************************/
@@ -360,5 +485,7 @@ footer p{
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 

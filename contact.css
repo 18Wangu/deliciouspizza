@@ -54,32 +54,34 @@ nav a:hover{
 .navbar ul li a.active {
     color: rgb(237, 186, 92);
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
 /*Responsive Tablette*/
 @media (max-width: 769px){
-
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
 }
 /*Responsive Phone*/
 @media (max-width: 426px){
     nav{
-        padding: 40px;
+        padding: 40px 25px 25px 25px;
     }
     .navbar{
         display: none;
     }
-}
-/*Responsive Phone moyen*/
-@media (max-width: 376px){
-
-}
-/*Responsive Phone petit*/
-@media (max-width: 321px){
-
 }
 
 /****************** contact ******************/
 #contact{
     display: flex;
     width: 100vw;
+    background-image: url("images/background-tableau-prof.jpg");
+    background-attachment: fixed;
 }
 #contact article{
     width: 50vw;
@@ -90,14 +92,13 @@ iframe{
     height: 450px;
 }
 .formulaire{
-    background-image: url("images/background-tableau-prof.jpg");
-    background-attachment: fixed;
     padding: 100px;
 }
 h1{
     font-family: "Josefin";
     font-size: 28px;
     color: rgb(220, 219, 216);
+    padding-top: 20px;
 }
 #name, #email, #message{
     width: 350px;
@@ -138,28 +139,30 @@ input[type="message"]:focus {
     cursor: pointer;
     color: rgb(237, 186, 92);
 }
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    #name, #email, #message{
+        width: 200px;
+    }
+}
 /*Responsive Phone*/
 @media (max-width: 426px){
     #contact{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     #contact article{
         width: 100vw;
-        height: 350px;
+        height: 400px;
     }
     iframe{
         width: 100vw;
-        height: 350px;
+        height: 400px;
     }
-}
-/*Responsive Phone moyen*/
-@media (max-width: 376px){
-
-}
-/*Responsive Phone petit*/
-@media (max-width: 321px){
-
+    .formulaire{
+        padding: 50px;
+    }
 }
 
 /****************** footer ******************/
@@ -179,17 +182,36 @@ footer{
 }
 .socialMedia{
     display: flex;
+    justify-content: center;
 }
 footer h1{
     font-family: "Josefin";
     font-size: 28px;
     color: rgb(13, 17, 18);
+    margin-top: 25px;
 }
 footer p{
     font-family: "Poppins";
     font-size: 15px;
     color: #5c3d03;
     margin: 0px 45px 0px 15px;
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    footer{
+        text-align: center;
+    }
+    .aboutUs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /******************************* animation au scroll *******************************/
@@ -204,23 +226,6 @@ footer p{
 }
 
 
-/*Responsive Laptop*/
-@media (max-width: 1025px){
 
-}
-/*Responsive Tablette*/
-@media (max-width: 769px){
 
-}
-/*Responsive Phone*/
-@media (max-width: 426px){
 
-}
-/*Responsive Phone moyen*/
-@media (max-width: 376px){
-
-}
-/*Responsive Phone petit*/
-@media (max-width: 321px){
-
-}

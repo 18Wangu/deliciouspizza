@@ -54,6 +54,27 @@ nav a:hover{
 .navbar ul li a.active {
     color: rgb(237, 186, 92);
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    nav{
+        padding: 40px 25px 25px 25px;
+    }
+    .navbar{
+        display: none;
+    }
+}
 
 /****************** welcome ******************/
 #welcome {
@@ -145,6 +166,9 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     margin: 0px 65px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .iconeEtText{
     display: flex;
@@ -173,10 +197,45 @@ nav a:hover{
 .reseauSociaux img{
     margin: 0px 5px;
 }
+.reseauSociaux a{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    .contact{
+        padding: 15px;
+    }
+    .contactDetail{
+        margin: 20px 30px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    #bandeauContact{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 25px;
+        width: 100vw;
+    }
+    .contactDetail{
+        align-items: center;
+        margin: 15px;
+    }
+    .reseauSociaux{
+        width: 100vw;
+    }
+}
 
 /******************  history ******************/
 #history{
     display: flex;
+}
+#history img{
+    width: 50vw;
 }
 .historyBackground{
     background-image: url(images/background-tableau-prof.jpg);
@@ -191,6 +250,9 @@ nav a:hover{
     font-size: 30px;
     color: rgb(220, 219, 216);
     margin: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 #history p{
     font-family: "Poppins";
@@ -198,10 +260,49 @@ nav a:hover{
     color: rgb(144, 136, 123);
     margin: 0px 100px;
     text-align: justify;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 #history strong{
     color: rgb(237, 186, 92);   
 } 
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    #history h1{
+        text-align: center;
+        margin: 40px 40px 0px 40px;
+    }
+    #history p{
+        margin: 25px 50px 55px 50px;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    #history{
+        flex-direction: column;
+    }
+    #history img{
+        width: 100vw;
+    }
+    #history h1{
+        text-align: center;
+        margin: 70px 40px 0px 40px;
+    }
+    #history p{
+        margin: 25px 80px 70px 80px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #history h1{
+        text-align: center;
+        margin: 40px 40px 0px 40px;
+    }
+    #history p{
+        margin: 25px 30px 40px 30px;
+    }
+}
 
 /****************** our services ******************/
 #ourServices{
@@ -222,6 +323,7 @@ nav a:hover{
     font-size: 15px;
     color: #5c3d03;
     margin: 35px 0px;
+    text-align: center;
 }
 #ourServices h3{
     font-family: "Josefin";
@@ -245,7 +347,32 @@ nav a:hover{
     align-items: center;
     text-align: center;
     margin: 0px 35px;
-} 
+}
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #ourServices{
+        padding: 50px 50px;
+    }
+    .services{
+        flex-direction: column;
+    }
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+
+}
 
 /****************** meals + menu ******************/
 .background_fixe{
@@ -254,7 +381,7 @@ nav a:hover{
 }
 /****************** meals ******************/
 #meals{
-    padding: 100px 0px;
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,19 +390,20 @@ nav a:hover{
     font-family: "Josefin";
     font-size: 30px;
     color: rgb(220, 219, 216);
-    padding: 25px;
+    padding: 25px 0px;
 }
 #meals h3{
     font-family: "Poppins";
     font-size: 15px;
     color: rgb(144, 136, 123);
     text-align: center;
+    margin-bottom: 50px;
+    padding: 0px 15px;
 }
 .orderPizza{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    margin: 80px;
 }
 .pizza{
     display: flex;
@@ -355,6 +483,35 @@ nav a:hover{
     border: 1px solid rgb(237, 186, 92);
     cursor: pointer;
 }
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    .description{
+        width: 50vw;
+    }
+    .inverserPizzaDescription{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .italianPizza{
+        width: 50vw;
+    }
+    .greekPizza{
+        width: 50vw;
+    }
+    .caucasianPizza{
+        width: 50vw;
+    }
+    .americanPizza{
+        width: 50vw;
+    }
+    .tomatoePie{
+        width: 50vw;
+    }
+    .margherita{
+        width: 50vw;
+    }
+}
+
 
 /****************** menu pricing ******************/
 #menuPricing{
@@ -366,13 +523,14 @@ nav a:hover{
     font-family: "Josefin";
     font-size: 30px;
     color: rgb(220, 219, 216);
-    padding: 25px;
+    padding: 25px 0px;
 }
 #menuPricing h3{
     font-family: "Poppins";
     font-size: 15px;
     color: rgb(144, 136, 123);
     text-align: center;
+    padding: 0px 15px;
 }
 #menuPricing h2{
     font-family: "Josefin";
@@ -440,6 +598,34 @@ nav a:hover{
 .menu strong{
     color: rgb(237, 186, 92);
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    .menu{
+        flex-direction: column;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    .pizzaEtPrix{
+        width: 260px;
+    }
+}
+/*Responsive Phone moyen*/
+@media (max-width: 376px){
+    .pizzaEtPrix{
+        width: 200px;
+    }
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+    .pizzaEtPrix{
+        width: 170px;
+    }
+}
 
 /****************** numbers dynamics ******************/
 #numbersDynamics{
@@ -475,12 +661,19 @@ nav a:hover{
     transform: rotate(360deg);
     border-color: rgb(237, 186, 92);
 }
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #numbersDynamics{
+        padding: 50px 50px;
+        flex-direction: column;
+    }
+}
 
 /****************** menu clic ******************/
 #menu_clic{
-    background-image: url("images/background-tableau-prof.jpg");
-    background-attachment: fixed;
     padding: 80px;
+    background-image: url(images/background-tableau-prof.jpg);
+    background-attachment: fixed;
 }
 .chooseMenu{
     padding: 8px 16px;
@@ -545,11 +738,41 @@ nav a:hover{
     border: 1px solid rgb(237, 186, 92);
     cursor: pointer;
 }
+/*Responsive Laptop*/
+@media (max-width: 1025px){
+    #pizzas, #drinks, #burger, #pasta {
+        flex-wrap: wrap;
+    }
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #menu_clic{
+        padding: 10px;
+    }
+    .chooseMenu{
+        margin: 0px 10px 20px 0px;
+    }
+    #pizzas, #drinks, #burger, #pasta {
+        flex-direction: column;
+    }
+}
+/*Responsive Phone petit*/
+@media (max-width: 321px){
+    .chooseMenu{
+        margin: 0px 8px 20px 0px;
+    }
+}
 
 /****************** contact ******************/
 #contact{
     display: flex;
     width: 100vw;
+    background-image: url("images/background-tableau-prof.jpg");
+    background-attachment: fixed;
 }
 #contact article{
     width: 50vw;
@@ -560,13 +783,13 @@ iframe{
     height: 450px;
 }
 .formulaire{
-    background-color: rgb(13, 17, 18);
     padding: 100px;
 }
 h1{
     font-family: "Josefin";
     font-size: 28px;
     color: rgb(220, 219, 216);
+    padding-top: 20px;
 }
 #name, #email, #message{
     width: 350px;
@@ -607,13 +830,39 @@ input[type="message"]:focus {
     cursor: pointer;
     color: rgb(237, 186, 92);
 }
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    #name, #email, #message{
+        width: 200px;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact article{
+        width: 100vw;
+        height: 400px;
+    }
+    iframe{
+        margin-top: 50px;
+        width: 100vw;
+        height: 400px;
+    }
+    .formulaire{
+        padding: 50px;
+    }
+}
 
 /****************** footer ******************/
 footer{
     background-color: rgb(237, 186, 92);
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 35px;
 }
 .aboutUs{
     display: flex;
@@ -625,17 +874,36 @@ footer{
 }
 .socialMedia{
     display: flex;
+    justify-content: center;
 }
 footer h1{
     font-family: "Josefin";
     font-size: 28px;
     color: rgb(13, 17, 18);
+    margin-top: 25px;
 }
 footer p{
     font-family: "Poppins";
     font-size: 15px;
     color: #5c3d03;
     margin: 0px 45px 0px 15px;
+}
+/*Responsive Tablette*/
+@media (max-width: 769px){
+    footer{
+        text-align: center;
+    }
+    .aboutUs{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*Responsive Phone*/
+@media (max-width: 426px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /******************************* animation au scroll *******************************/
@@ -648,5 +916,4 @@ footer p{
     opacity: 1;
     transform: translateY(0);
 }
-
 
