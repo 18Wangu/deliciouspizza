@@ -251,32 +251,18 @@ function afficherElements(elements, decalageY) {
   }, 200);
 }
 
-// Récupération des éléments à afficher progressivement dans la section "history"
-var h1ElementHistory = document.querySelector('#history h1');
-var pElementHistory = document.querySelector('#history p');
-
 // Récupération des éléments à afficher progressivement dans la section "ourServices"
 var h1ElementOurServices = document.querySelector('#ourServices h1');
 var pElementOurServices = document.querySelector('#ourServices p');
 var articleElementOurServices = document.querySelector('#ourServices article');
 
 // Ajout de la classe CSS pour cacher les éléments au départ et les décaler verticalement
-h1ElementHistory.classList.add('invisible');
-pElementHistory.classList.add('invisible');
-h1ElementHistory.style.transform = 'translateY(50px)';
-pElementHistory.style.transform = 'translateY(50px)';
-
 h1ElementOurServices.classList.add('invisible');
 pElementOurServices.classList.add('invisible');
 articleElementOurServices.classList.add('invisible');
 h1ElementOurServices.style.transform = 'translateY(50px)';
 pElementOurServices.style.transform = 'translateY(50px)';
 articleElementOurServices.style.transform = 'translateY(50px)';
-
-// Appel de la fonction pour afficher les éléments de la section "history" au défilement de la page
-window.addEventListener('scroll', function() {
-  afficherElements([h1ElementHistory, pElementHistory], 50);
-});
 
 // Appel de la fonction pour afficher les éléments de la section "ourServices" au défilement de la page
 window.addEventListener('scroll', function() {
