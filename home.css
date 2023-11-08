@@ -250,9 +250,6 @@ nav a:hover{
     font-size: 30px;
     color: rgb(220, 219, 216);
     margin: 20px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 #history p{
     font-family: "Poppins";
@@ -260,9 +257,6 @@ nav a:hover{
     color: rgb(144, 136, 123);
     margin: 0px 100px;
     text-align: justify;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 #history strong{
     color: rgb(237, 186, 92);   
